@@ -1,0 +1,13 @@
+syntax="proto3";
+
+import "sub/sub.proto";
+
+message TestData{
+    required string name=1;
+    required int32 id=2;
+    optional bool b=3;
+    optional int32 i=4;
+    repeated SubData objs=5;
+    repeated SubData objList=6;
+    required SubData obj=7;
+}
