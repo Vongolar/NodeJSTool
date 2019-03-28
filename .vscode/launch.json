@@ -8,7 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "Proto Gen",
-            "program": "${workspaceFolder}/proto/gen.js"
+            "program": "${workspaceFolder}/protobuf/gen.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Proto PreView",
+            "program": "${workspaceFolder}/protobuf/preview.js"
         }
     ]
 }
