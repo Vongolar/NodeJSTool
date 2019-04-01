@@ -7,11 +7,16 @@ let options={
     format:true
 };
 
-function encode(date){
+function encode(data){
     let parser=new xml.j2xParser(options);
-    return parser.parse(date);
+    return parser.parse(data);
+}
+
+function decode(data){
+    return xml.parse(data,options);
 }
 
 module.exports={
-    encode
+    encode,
+    decode
 }
