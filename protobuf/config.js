@@ -1,4 +1,4 @@
-let dataPath = './protobuf/data/';
+let dataPath = './data/';
 let protoPath = './protobuf/proto/';
 let outPath = './protobuf/out/';
 

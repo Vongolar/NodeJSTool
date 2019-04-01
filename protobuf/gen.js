@@ -9,7 +9,7 @@ let dataPath=config.dataPath;
 let protoPath=config.protoPath;
 
 file.cleanDir(outPath);
-let key = {};
+
 file.ergodicDir(dataPath, (dataFile) => {
     let jsonData = JSON.parse(fs.readFileSync(dataFile, 'utf-8'));
     let buf = proto.encode(protoPath + jsonData.path, jsonData.proto, jsonData.data);
