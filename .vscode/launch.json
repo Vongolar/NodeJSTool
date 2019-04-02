@@ -7,6 +7,13 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Proto Combine",
+            "program": "${workspaceFolder}/protobuf/combineProto.js"
+        },
+    
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Proto Gen",
             "program": "${workspaceFolder}/protobuf/gen.js"
         },
