@@ -13,7 +13,7 @@ file.cleanDir(outPath);
 file.ergodicDir(dataPath, (dataFile) => {
     let jsonData = JSON.parse(fs.readFileSync(dataFile, 'utf-8'));
     let buf = proto.encode(protoPath + jsonData.path, jsonData.proto, jsonData.data);
-    let subPath = dataFile.substring(dataPath.length + 1).split('.')[0] + '.pd';
+    let subPath = dataFile.substring(dataPath.length + 1).split('.')[0] + '.bin';
     let pathLength=convert.intToUint8Array(jsonData.path.length);
     let protoLength=convert.intToUint8Array(jsonData.proto.length);
     let pathHead=convert.stringToUint8Array(jsonData.path);
