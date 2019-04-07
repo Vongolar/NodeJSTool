@@ -22,7 +22,7 @@
             "request": "launch",
             "name": "Proto PreView",
             "program": "${workspaceFolder}/protobuf/preview.js",
-            "args": ["test.pd"]
+            "args": ["resMap.bin"]
         },
         {
             "type": "node",

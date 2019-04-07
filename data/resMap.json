@@ -1,0 +1,9 @@
+{
+    "path":"all.proto",
+    "proto": "KeyValueMap",
+    "data": {
+        "map":[
+            {"key":"test_bin","value":"data/test.bin"}
+        ]
+    }
+}
